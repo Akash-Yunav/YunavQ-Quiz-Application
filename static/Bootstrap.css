@@ -1,0 +1,228 @@
+/* navbar custamization */
+
+.searchborder {
+  border: outset;
+  border-color: #212529;
+  color: rgb(65, 62, 57);
+  background-color: greenyellow;
+}
+
+#skintone {
+  margin-right: 50px;
+}
+
+.elemar {
+  margin-left: 30px;
+}
+
+/* End NavBar custom */
+
+/* Custamization Of Form */
+
+.Fap {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* End of Form custom */
+
+/* Custamization of Jumabotron 1 */
+
+.jumbointro {
+  background-color: white;
+  text-align: center;
+}
+
+/* end of Custom Jumbotron 1 */
+
+/* Custamization of Jumabotron 2 */
+#ToneDetector {
+  background-color: greenyellow;
+}
+/* end of Custom Jumbotron 2 */
+.bluesearch {
+  background-color: blue;
+  color: white;
+}
+/* connect */
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+
+#beauty-products {
+  text-align: left;
+}
+
+.side2side {
+  flex: inline;
+}
+
+.Uploadskin {
+  margin-left: 0px;
+  margin-right: 50px;
+}
+
+#Harami {
+  color: green;
+}
+
+#mastram {
+  height: 10px;
+  width: 20px;
+}
+
+.cen {
+  text-align: center;
+}
+
+.BeautySkin {
+  display: block;
+  width: 100%;
+}
+
+.sliderop {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.BeautySkin2 {
+  display: block;
+  width: 80%;
+  margin-left: 35px;
+  height: 200px;
+  /* text-align: center; */
+}
+
+#WebCam {
+  margin: 0px auto;
+  width: 500px;
+  height: 375px;
+  border: 10px #333 solid;
+}
+
+#videoEle {
+  width: 500px;
+  height: 375px;
+  background-color: #666;
+}
+
+#kk {
+  text-align: center;
+  width: 100%;
+}
+
+/* 
+.col-xs-12 {
+    text-align: center;
+} */
+
+/* 
+.row {
+    background-color: #0c63e4; */
+
+/* } */
+
+/* #NavWhite {
+    color: white */
+
+/* } */
+
+/*Footer Style */
+
+.container-fluidd {
+  overflow: hidden;
+  margin-top: 250px;
+  background: #262626;
+  color: #627482 !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+small {
+  font-size: calc(
+    12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
+}
+
+.bold-text {
+  color: #989c9e !important;
+}
+
+.mt-55 {
+  margin-top: calc(
+    50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
+}
+
+h3 {
+  font-size: calc(
+    34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
+}
+
+.social {
+  font-size: 21px !important;
+}
+
+.rights {
+  font-size: calc(
+    10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
+}
+
+.cenb1{
+ padding-top: 80px;
+  /* padding-left: 110px; 
+ align-items: center;
+ flex-wrap: wrap;
+ -ms-flex-align: center; */
+  font-size: 50px;
+  /* display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; */
+  
+  
+}
+.cenb2{
+  font-size: 50px;
+}
+.c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* .cenb2{
+  padding-left: 141px; 
+  font-size: 50px;
+  
+} */
+
+.cenb3{
+  /* padding-left: 167px;  */
+  font-size: 50px;
+  
+}
+
+.imspace{
+  padding-top: 10px;
+}

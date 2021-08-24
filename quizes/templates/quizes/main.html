@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block scripts %}
+
+<script src="{% static 'quizes/min.js' %}" defer></script>
+
+{% endblock scripts %}
+
+
+
+    {% block title %}
+    Home
+    {% endblock title %}
+
+    {% block content %}
+
+    <!-- Modal -->
+    <div class="modal fade" id="quizStartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Start?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-confirm"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                    <button type="button" id="start-button" class="btn btn-success">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <!-- Jumbo tron1 Intro -->
+
+
+    <div class="jumbotron jumbotron-fluid jumbointro" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000" id="About" style="background-color: white;">
+
+        <!-- Bootstrap Grid system 1 -->
+
+        <div class="container-fluid">
+            <div class="row" id>
+
+                <!-- Right Side -->
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6 " class="cen">
+
+                    <h1 class="display-4 " id="kk "><strong><span
+                                class="badge rounded-pill bg-primary">YunavQ</span></strong></h1>
+                    <br><br>
+                    <p class="lead ">
+                        If you Were looking for a Platform Where you Could Pracrice some Important Programing Concepts?
+                    </p>
+                    <p class="lead">Well then you are at the right place , At <span
+                            class="badge rounded-pill bg-danger">YunavQ</span>
+                        You get all of it with beautiful Interface to warm up your mind and be
+                        hooked to application keep you hooked,</p>
+
+                </div>
+
+
+                <!-- Left side quiz list -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6 thumbnail" class="cen">
+
+
+
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div class="c">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed cenb1" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <span class="badge rounded-pill bg-success">Computer Science Quizzes</span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+
+                                        {% for obj in object_list %}
+
+                                        <!--data-typee="{{obj.type}}"-->
+                                        <button class="btn btn-link modal-button" data-pk="{{obj.pk}}"
+                                            data-quiz="{{obj.name}}" data-questions="{{obj.number_of_questions}}"
+                                            data-difficulty="{{obj.difficluty}}" data-time="{{obj.time}}"
+                                            data-pass="{{obj.required_score_to_pass}}" data-toggle="modal"
+                                            data-target="#quizStartModal">
+                                            <span class="badge rounded-pill bg-dark"> {{obj.name}}</span>
+
+                                        </button><br>
+
+                                        {% endfor %}
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="imspace" src="{% static 'quizes/download.png' %}" alt="My image">
+                        </div>
+
+                        <center>
+                            
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- End of Grid1 -->
+
+
+            <hr class="my-4 " />
+            <br>
+
+
+            {% endblock content %}
